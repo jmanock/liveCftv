@@ -1,27 +1,30 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React,{Component} from 'react';
+import {Switch,BrowserRouter,Route} from 'react-router-dom';
+import Header from './Components/NavBar/Header';
+import Home from './Components/Home';
+import About from './Components/About';
+import Sponsors from './Components/Sponsors';
+import Events from './Components/SpecialEvents';
+import Bikes from './Components/Bikes';
+import Cars from './Components/Cars';
+import Footer from './Components/NavBar/Footer';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
+class App extends Component{
+  render(){
+    return(
+      <BrowserRouter>
+        <Header />
+        <Switch>
+          <Route exact path='/' component={Home} />
+          <Route path='/CarFeverTV' component={Cars} />
+          <Route path='/CycleFeverTV' component={Bikes} />
+          <Route path='/About' component={About} />
+          <Route path='/Events' component={Events} />
+          <Route path='/Sponsors' component={Sponsors} />
+        </Switch>
+        <Footer />
+      </BrowserRouter>
+    )
   }
 }
 
