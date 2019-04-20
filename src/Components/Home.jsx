@@ -1,7 +1,61 @@
 import React from 'react';
+import {Tabs, Tab} from 'react-bootstrap';
+import WatchLive from './WatchLive';
+import Schedule from './Schedule';
+import Logo from '../Images/logo.png';
 
-const Home = () =>(
-  <h1>Home</h1>
-);
+const Home = () =>{
+
+  return(
+    <div className='container'>
+      <section>
+        <Tabs defaultActiveKey='WatchLive' id='uncontrolled-tab-example'>
+          <Tab eventKey='WatchLive' title='WatchLive'>
+            <WatchLive />
+          </Tab>
+          <Tab eventKey='Schedule' title='Schedule'>
+            <Schedule />
+          </Tab>
+        </Tabs>
+      </section>
+      <section>
+        <div className='card'>
+          <div className='card-body'>
+            <h5 className='card-title text-center'>Who We Are</h5>
+            <p className='card-text'><img src={Logo} className='logo' alt='logo'></img> We are a team, that films &amp; streams live events. We provide post production and create polished show reel from the live event for use by the customer, including or not adverts and other such enhancements. We also build our social following as well as customer social following. We market and distribute content and provide a 24/7 streaming channel.</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className='card'>
+          <div className='card-body'>
+            <h5 className='card-title text-center'>What We Do and Why</h5>
+            <ul className='list-group list-group-flush'>
+              <li className='list-group-item'>Provide local resources information in a video magazine format</li>
+              <li className='list-group-item'>Provide a platform to advertise products, events, and locations to a key known audience</li>
+              <li className='list-group-item'>Create partnerships with key companies who have a shared ethos</li>
+              <li className='list-group-item'>In the future, we will bring on more platforms and more outlets to bring the messgae to a greater audience</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className='card'>
+          <div className='card-body'>
+            <h5 className='card-title text-center'>What Motivates Us</h5>
+            <ul className='list-group list-group-flush'>
+              <li className='list-group-item'>We have over 40 years of TV Production and Presenting Experience</li>
+              <li className='list-group-item'>We want to do something different</li>
+              <li className='list-group-item'>We want to meet a need from the community</li>
+              <li className='list-group-item'>We want to provide a quality service</li>
+              <li className='list-group-item'>We will follow the technology path for delivery/distribution</li>
+              <li className='list-group-item'>We are building on our following: Viewers, Followers, Fans</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+  )
+}
 
 export default Home;
