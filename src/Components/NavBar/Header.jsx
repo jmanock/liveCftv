@@ -1,9 +1,10 @@
 import React from 'react';
+import Logo from '../../Images/logo.png';
 import {Link, withRouter} from 'react-router-dom';
 
 const Header = () =>(
   <nav className='navbar navbar-expand-lg navbar-light bg-light'>
-    <Link to='/' className='navbar-brand'><span>CFTV.Live</span></Link>
+    <Link to='/' className='navbar-brand'><img src={Logo} alt='logo' className='logo'></img></Link>
     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className='navbar-toggler-icon'></span>
     </button>

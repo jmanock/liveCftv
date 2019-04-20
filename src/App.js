@@ -8,6 +8,7 @@ import Events from './Components/SpecialEvents';
 import Bikes from './Components/Bikes';
 import Cars from './Components/Cars';
 import Footer from './Components/NavBar/Footer';
+import './Main.css';
 
 class App extends Component{
   render(){
