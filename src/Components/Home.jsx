@@ -8,7 +8,7 @@ const Home = () =>{
 
   return(
     <div className='container'>
-      <section>
+      <section style={{marginTop:100}}>
         <Tabs defaultActiveKey='WatchLive' id='uncontrolled-tab-example'>
           <Tab eventKey='WatchLive' title='WatchLive'>
             <WatchLive />
