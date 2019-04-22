@@ -1,7 +1,8 @@
 import React from 'react';
 import {Tabs, Tab} from 'react-bootstrap';
 import WatchLive from './WatchLive';
-import Schedule from './Schedule';
+import UpcomingEvents from './UpcomingEvents';
+import PastEvents from './PastEvents';
 import Logo from '../Images/logo.png';
 
 const Home = () =>{
@@ -10,11 +11,14 @@ const Home = () =>{
     <div className='container'>
       <section style={{marginTop:100}}>
         <Tabs defaultActiveKey='WatchLive' id='uncontrolled-tab-example'>
-          <Tab eventKey='WatchLive' title='WatchLive'>
+          <Tab eventKey='WatchLive' title='Watch Live'>
             <WatchLive />
           </Tab>
-          <Tab eventKey='Schedule' title='Schedule'>
-            <Schedule />
+          <Tab eventKey='Upcoming' title='Upcoming Events'>
+            <UpcomingEvents />
+          </Tab>
+          <Tab eventKey='Past' title='Past Events'>
+            <PastEvents />
           </Tab>
         </Tabs>
       </section>

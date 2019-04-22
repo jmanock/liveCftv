@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Schedule = () =>(
+const UpcomingEvents = () =>(
   <table className='table table-striped'>
     <thead>
       <tr>
@@ -8,7 +8,6 @@ const Schedule = () =>(
         <th scope='col'>Name</th>
         <th scope='col'>Time</th>
         <th scope='col'>Location</th>
-        <th scope='col'>Watch</th>
       </tr>
     </thead>
     <tbody>
@@ -52,4 +51,4 @@ const Schedule = () =>(
   </table>
 );
 
-export default Schedule;
+export default UpcomingEvents;
