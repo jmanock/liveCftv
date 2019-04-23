@@ -1,7 +1,8 @@
 import React from 'react';
+import CalendarBike from './Calendar/CalendarBike';
 
 const Bikes = () =>(
-  <h1>Bikes</h1>
+  <CalendarBike />
 );
 
 export default Bikes;
