@@ -1,37 +1,20 @@
-import React from 'react';
+import React,{Component} from 'react';
+import {Row, Button, ButtonGroup, Overlay, Popover, Modal, Container} from 'react-bootstrap';
 
-const PastEvents = () =>(
-  <table className='table tabel-striped'>
-    <thead>
-      <tr>
-        <th scope='col'>Date</th>
-        <th scope='col'>Name</th>
-        <th scope='col'>Length</th>
-        <th scope='col'>Location</th>
-        <th scope='col'>Watch</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope='row'></th>
-        <td>Orlando Predators</td>
-        <td>Amway Center</td>
-        <td><button type='button'>Watch</button></td>
-      </tr>
-      <tr>
-        <th scope='row'></th>
-        <td>Bike Night</td>
-        <td>Ace Cafe</td>
-        <td><button type='button'>Watch</button></td>
-      </tr>
-      <tr>
-        <th scope='row'></th>
-        <td>Porsche Night</td>
-        <td>Ace Cafe</td>
-        <td><button type='button'>Watch</button></td>
-      </tr>
-    </tbody>
-  </table>
-);
+class PastEvents extends Component{
+  state = {
+    showPopover:false,
+    showModal:false,
+  }
+  render(){
+    return(
+      <div>
+        <Overlay show={this.state.showPopover} rootclose onHide={()=>this.setState({showPopover:false})} placement='top' container={this} target={this.state.popoverTarget}>
+          <Popover id='event'>{this.state.overlayTitle}</Popover>
+        </Overlay>
+      </div>
+    )
+  }
+}
 
-export default PastEvents;
+export default PastEvents
