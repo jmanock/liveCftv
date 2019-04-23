@@ -1,7 +1,8 @@
 import React from 'react';
+import CalendarCars from './Calendar/CalendarCars';
 
 const Cars = () =>(
-  <h1>Cars</h1>
+  <CalendarCars />
 );
 
 export default Cars;

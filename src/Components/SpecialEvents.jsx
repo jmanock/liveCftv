@@ -1,7 +1,8 @@
 import React from 'react';
+import CalendarSpecial from './Calendar/CalendarSpecial';
 
 const Events = () =>(
-  <h1>Events</h1>
+  <CalendarSpecial />
 );
 
 export default Events;

@@ -22,7 +22,7 @@ export default{
 
   getCarEvents:() =>{
     const eventMeta = [
-      {start:'2019-05-20', end:'2019-05-13', title:'Porsche Night', link:'', description:'CFTV.Live is LIVE every 3rd Monday of the Month', where:'Ace Cafe Orlando', time:'7:30pm'},
+      {start:'2019-05-20', end:'2019-05-20', title:'Porsche Night', link:'', description:'CFTV.Live is LIVE every 3rd Monday of the Month', where:'Ace Cafe Orlando', time:'7:30pm'},
       {start:'2019-06-17', end:'2019-06-17', title:'Porsche Night', link:'', description:'CFTV.Live is LIVE every 3rd Monday of the Month', where:'Ace Cafe Orlando', time:'7:30pm'}
     ];
     const events = eventMeta.map((data) =>{
