@@ -13,7 +13,7 @@ class PastEvents extends Component{
     showModal:false,
   }
   handleClick = (x) =>{
-
+    console.log(x);
     this.setState({
       showPopover:false,
       showModal:true,
@@ -33,7 +33,7 @@ class PastEvents extends Component{
         <td>{data.title}</td>
         <td>{data.location}</td>
         <td>{data.time}</td>
-        <td><Button onClick={this.handleClick}>Watch</Button></td>
+        <td><Button onClick={() => this.handleClick(data.link)}>Watch</Button></td>
       </tr>
     });
     return(
