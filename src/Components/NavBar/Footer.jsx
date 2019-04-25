@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () =>(
   <footer className='page-footer' style={{backgroundColor:'#43464b'}}>
     <ul className='nav justify-content-center'>
-     <li className='nav-link'>&copy;2019 <span style={{color:'#fc0100'}}>CFTV</span></li>
+     <li className='nav-link copy'>&copy;2019 <span style={{color:'#fc0100'}}>CFTV</span></li>
      <li className='nav-item'>
        <a href='https://facebook.com/CycleFeverTV' className='nav-link'><i className='fab fa-facebook-f'></i></a>
      </li>

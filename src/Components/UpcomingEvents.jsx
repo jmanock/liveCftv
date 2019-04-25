@@ -14,7 +14,7 @@ const UpcomingEvents = () =>(
       <tr>
         <td>4/25/19</td>
         <td>Bike Night</td>
-        <td>7:30pm</td>
+        <td>8:00pm</td>
         <td>Ace Cafe Orlando</td>
       </tr>
       <tr>

@@ -95,6 +95,14 @@ td{
   background-color:#fc0100;
   border-color:#fc0100;
 }
+.watchButton:hover{
+  color:black;
+  background-color:#fc0100;
+  border-color:#fc0100;
+}
 .infoCard{
   margin-bottom:50px;
+}
+.copy{
+  color:#fff !important;
 }
