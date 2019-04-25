@@ -1,10 +1,10 @@
 import React,{Component} from 'react';
-import {Row, Button, ButtonGroup, Overlay, Popover, Modal, Container} from 'react-bootstrap';
+import {Button, Modal, Container} from 'react-bootstrap';
 const Shows = [
-  {link:'https://www.youtube.com/embed/Ofx6dt2myqg', date:'2019-04-15', title:'Porsche Night', location:'Ace Cafe Orlando', time:'53:19'},
-  {link:'https://www.youtube.com/embed/-oy_QiYymQc', date:'2019-03-28', title:'Bike Night', location:'Ace Cafe Orlando', time:'1:20:34'},
-  {link:'https://www.youtube.com/embed/GyS81ARplKQ', date:'2019-03-18', title:'Porsche Night', location:'Ace Cafe Orlando', time:'54:24'},
-  {link:'https://www.youtube.com/embed/u66-QQ8f7YQ', date:'2019-03-14', title:'Bike Night', location:'Ace Cafe Orlando', time:'1:06:49'}
+  {link:'https://www.youtube.com/embed/Ofx6dt2myqg', date:'04-15-2019', title:'Porsche Night', location:'Ace Cafe Orlando', time:'53:19'},
+  {link:'https://www.youtube.com/embed/-oy_QiYymQc', date:'03-28-2019', title:'Bike Night', location:'Ace Cafe Orlando', time:'1:20:34'},
+  {link:'https://www.youtube.com/embed/GyS81ARplKQ', date:'03-18-2019', title:'Porsche Night', location:'Ace Cafe Orlando', time:'54:24'},
+  {link:'https://www.youtube.com/embed/u66-QQ8f7YQ', date:'03-14-2019', title:'Bike Night', location:'Ace Cafe Orlando', time:'1:06:49'}
 ];
 
 class PastEvents extends Component{
@@ -35,21 +35,18 @@ class PastEvents extends Component{
         <td>{data.title}</td>
         <td>{data.location}</td>
         <td>{data.time}</td>
-        <td><Button onClick={() => this.handleClick(data)}>Watch</Button></td>
+        <td><Button onClick={() => this.handleClick(data)} className='watchButton'>Watch</Button></td>
       </tr>
     });
     return(
       <div>
         <Modal show={this.state.showModal} onHide={this.handleModalClose}>
           <Modal.Header closeButton>
-            <Modal.Title>{this.state.overlayTitle}</Modal.Title>
+            <Modal.Title>{this.state.overlayDate} | {this.state.overlayTitle}</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <span>{this.state.overlayLocation}</span>
-            <span>{this.state.overlayTitle}</span>
-            <span>{this.state.overlayDate}</span>
             <div className='embed-responsive embed-responsive-21by9'>
-              <iframe src={this.state.overlayLink} alow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowFullScreen title='Live'></iframe>
+              <iframe src={this.state.overlayLink} alow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowFullScreen title='Live' ></iframe>
             </div>
           </Modal.Body>
         </Modal>

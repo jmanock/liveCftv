@@ -79,9 +79,9 @@ class CalendarSpecial extends Component{
         </Modal>
         <Container>
           <Row>
-            <ButtonGroup style={{marginTop:100}}>
+            <ButtonGroup>
               <Button variant='secondary' onClick={this.handlePrevioudMonth}>&lt;</Button>
-              <h1>{this.getHumanDate()}</h1>
+              <h1 style={{color:'#fc0100'}}>{this.getHumanDate()}</h1>
               <Button variant='secondary' onClick={this.handleNextMonth}>&gt;</Button>
             </ButtonGroup>
             <Events month={this.state.moment.month()} year={this.state.moment.year()} events={Data.getSpecialEvents()} onEventClick={this.handleEventClick} maxEventSlots={10} />

@@ -68,11 +68,11 @@ class CalendarBike extends Component{
   render(){
     return(
       <div>
-        <Overlay show={this.state.showPopover} rootClose onHide={() => this.setState({showPopover:false})} placement='top' container={this} target={this.state.popoverTarget}>
+          <Overlay show={this.state.showPopover} rootClose onHide={ () => this.setState({showPopover:false})} placement='top' component={this} target={this.state.popoverTarget}>
           <Popover id='event'>{this.state.overlayTitle}</Popover>
         </Overlay>
 
-        <Modal show={this.state.showModal} onHide={this.handlModalClose}>
+        <Modal show={this.state.showModal} onHide={this.handleModalClose}>
           <Modal.Header closeButton>
             <Modal.Title>{this.state.overlayTitle}</Modal.Title>
           </Modal.Header>
@@ -88,9 +88,9 @@ class CalendarBike extends Component{
         </Modal>
         <Container>
           <Row>
-            <ButtonGroup style={{marginTop:100}}>
+            <ButtonGroup>
               <Button variant='secondary' onClick={this.handlePreviousMonth}>&lt;</Button>
-              <h1>{this.getHumanDate()}</h1>
+              <h1 style={{color:'#fc0100'}}>{this.getHumanDate()}</h1>
               <Button variant='secondary' onClick={this.handleNextMonth}>&gt;</Button>
             </ButtonGroup>
             <Events month={this.state.moment.month()} year={this.state.moment.year()} events={Data.getBikeEvents()} onEventClick={this.handleEventClick} maxEventSlots={10} />

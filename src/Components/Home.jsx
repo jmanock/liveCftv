@@ -9,7 +9,7 @@ const Home = () =>{
 
   return(
     <div className='container'>
-      <section style={{marginTop:100}}>
+      <section style={{marginTop:100}} className='tabs'>
         <Tabs defaultActiveKey='WatchLive' id='uncontrolled-tab-example'>
           <Tab eventKey='WatchLive' title='Watch Live'>
             <WatchLive />
@@ -25,7 +25,7 @@ const Home = () =>{
       <section>
         <div className='card'>
           <div className='card-body'>
-            <h5 className='card-title text-center'>Who We Are</h5>
+            <h3 className='card-title text-center'>Who We Are</h3>
             <p className='card-text'><img src={Logo} className='logo' alt='logo'></img> We are a team, that films &amp; streams live events. We provide post production and create polished show reel from the live event for use by the customer, including or not adverts and other such enhancements. We also build our social following as well as customer social following. We market and distribute content and provide a 24/7 streaming channel.</p>
           </div>
         </div>
@@ -33,7 +33,7 @@ const Home = () =>{
       <section>
         <div className='card'>
           <div className='card-body'>
-            <h5 className='card-title text-center'>What We Do and Why</h5>
+            <h3 className='card-title text-center'>What We Do and Why</h3>
             <ul className='list-group list-group-flush'>
               <li className='list-group-item'>Provide local resources information in a video magazine format</li>
               <li className='list-group-item'>Provide a platform to advertise products, events, and locations to a key known audience</li>
@@ -46,7 +46,7 @@ const Home = () =>{
       <section>
         <div className='card'>
           <div className='card-body'>
-            <h5 className='card-title text-center'>What Motivates Us</h5>
+            <h3 className='card-title text-center'>What Motivates Us</h3>
             <ul className='list-group list-group-flush'>
               <li className='list-group-item'>We have over 40 years of TV Production and Presenting Experience</li>
               <li className='list-group-item'>We want to do something different</li>
