@@ -106,3 +106,6 @@ td{
 .copy{
   color:#fff !important;
 }
+.card .card-body{
+  border:none;
+}

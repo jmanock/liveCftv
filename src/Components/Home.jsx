@@ -3,7 +3,7 @@ import {Tabs, Tab} from 'react-bootstrap';
 import WatchLive from './WatchLive';
 import UpcomingEvents from './UpcomingEvents';
 import PastEvents from './PastEvents';
-import Logo from '../Images/logo.png';
+import Logo from '../Images/logo2.png';
 
 const Home = () =>{
 
