@@ -8,10 +8,14 @@ body{
   color:#fff !important;
 }
 .nav-link{
-  color:#fc0100 !important;
+  /* color:#fc0100 !important; */
+  color:gray;
+}
+.nav-link:hover{
+  color:#333;
 }
 .nav-link.active{
-  color:black !important;
+  color:#fc0100 !important;
 }
 .icon{
   margin-right:10px;
