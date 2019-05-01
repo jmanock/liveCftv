@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+@import url('https://fonts.googleapis.com/css?family=Maitree');
 body{
+  font-family:'Maitree';
   background-color:lightgray;
 }
 .navbar{
