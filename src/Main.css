@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather');
 @import url('https://fonts.googleapis.com/css?family=Maitree');
 body{
-  font-family:'Maitree';
   background-color:lightgray;
 }
 .navbar{
@@ -12,10 +11,11 @@ body{
 }
 .nav-link{
   /* color:#fc0100 !important; */
-  color:gray;
+  color:#333;
 }
 .nav-link:hover{
-  color:#333;
+  color:#fff;
+  background-color:#fc0100;
 }
 .nav-link.active{
   color:#fc0100 !important;
