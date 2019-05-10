@@ -1,7 +1,6 @@
 import React,{Component} from 'react';
 
 const Events = [
-  {date:'5-9-2019', name:'Bike Night', time:'8:00pm', location:'Ace Cafe Orlando'},
   {date:'5-12-2019', name:'New York Sheets @ Orlando Predators', time:'5:00pm', location:'Amway Center'},
   {date:'5-13-2019', name:'Porsche Night', time:'7:30pm', location:'Ace Cafe Orlando'},
   {date:'5-18-2019', name:'Orlando Predators @ Jacksonville Sharks', time:'7:00pm', location:'Jacksonville Veterans Memorial Arena'},
