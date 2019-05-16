@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{Component} from 'react';
 import logo from '../Images/download.png';
 
 const Games = [
@@ -16,14 +16,36 @@ const Games = [
   {date:'7-13-2019', game:'Orlando Predators @ Carolina Cobras', score:'', watch:''},
   {date:'7-19-2019', game:'Columbus Lions @ Orlando Predators', score:'', watch:''},
   {date:'7-27-2019', game:'Orlando Predators @ Jacksonville Sharks', score:'', watch:''}
-]
-const Preds = () =>(
-  <div style={{marginTop:100}}>
-    <div className='card'>
-      <p className='card-text text-center'>CycleFeverTV is proud to announce we are streaming all Orlando Predators Home Games.</p>
-    </div>
-    <img src={logo} alt='Preds Logo' style={{width:300, height:200,marginLeft:-50}}/>
-  </div>
-);
+];
+
+class Preds extends Component{
+  render(){
+    const PredsGames = Games.map((data, index) =>{
+      return <tr key={index}>
+        <td>{data.date}</td>
+        <td>{data.game}</td>
+        <td>{data.score}</td>
+        <td>{data.watch}</td>
+      </tr>
+    })
+    return(
+      <div className='container'>
+        <table className='table table-striped' style={{marginTop:100}}>
+          <thead>
+            <tr>
+              <th scope='col'>Date</th>
+              <th scope='col'>Game</th>
+              <th scope='col'>Score</th>
+              <th scope='col'>Watch</th>
+            </tr>
+          </thead>
+          <tbody>
+            {PredsGames}
+          </tbody>
+        </table>
+      </div>
+    )
+  }
+}
 
 export default Preds;
