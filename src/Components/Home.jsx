@@ -9,6 +9,7 @@ const Home = () =>{
 
   return(
     <div className='container'>
+
       <section style={{marginTop:100}} className='tabs'>
         <Tabs defaultActiveKey='WatchLive' id='uncontrolled-tab-example'>
           <Tab eventKey='WatchLive' title='Watch Live'>
@@ -22,6 +23,7 @@ const Home = () =>{
           </Tab>
         </Tabs>
       </section>
+      
       <section>
         <div className='card'>
           <div className='card-body'>
