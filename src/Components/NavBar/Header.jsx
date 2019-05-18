@@ -10,7 +10,6 @@ const Header = () =>(
     </button>
     <div className='collapse navbar-collapse' id='navbarSupportedContent'>
       <ul className='navbar-nav mr-auto'>
-        <li className='nav-item'><Link className='nav-link' to='/OrlandoPredators'>Orlando Predators</Link></li>
         <li className='nav-item'><Link className='nav-link' to='/CycleFeverTV'>CycleFeverTV</Link></li>
         <li className='nav-item'><Link className='nav-link' to='/CarFeverTV'>CarFeverTV</Link></li>
         <li className='nav-item'><Link className='nav-link' to='/Events'>SpecialEvents</Link></li>
