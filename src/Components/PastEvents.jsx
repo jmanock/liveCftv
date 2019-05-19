@@ -1,6 +1,9 @@
 import React,{Component} from 'react';
 import {Button, Modal, Container} from 'react-bootstrap';
 const Shows = [
+  {link:'https://www.youtube.com/embed/V1EQ1URXog4', date:'5-18-2019', title:'Armed Forces Day with Harlequin Part 1', time:'43:38', location:'The Lakefront Park, Kissimmee, FL'},
+  {link:'https://www.youtube.com/embed/T1qeuWfpfCk', date:'5-18-2019', title:'Armed Forces Day with Harlequin Part 2', time:'43:54', location:'The Lakefron Park, Kissimmee, FL '},
+  {link:'https://www.youtube.com/embed/vOVta83oaLQ', date:'5-18-2019', title:'Orlando Predators @ Jacksonville Sharks', location:'Jacksonville Veterans Memorial Arena', time:'2:50:03'},
   {link:'https://www.youtube.com/embed/SbfquqH95TI', date:'05-12-2019', title:'New York Streets @ Orlando Predators', location:'Amway Center', time:'3:06:14'},
   {link:'https://www.youtube.com/embed/II27XVNJIwc', date:'05-09-2019', title:'Bike Night', location:'Ace Cafe Orlando', time:'57:45'},
   {link:'https://www.youtube.com/embed/l9yIFLtw9Ck', date:'04-25-2019', title:'Bike Night', location:'Ace Cafe Orlando', time:'1:15:01'},
