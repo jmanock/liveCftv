@@ -1,6 +1,7 @@
 import React from 'react';
 import Logo from '../../Images/logo2.png';
 import {Link, withRouter} from 'react-router-dom';
+import logo from '../../Images/download.png';
 
 const Header = () =>(
   <nav className='navbar fixed-top navbar-expand-lg navbar-light bg-light'>
@@ -10,11 +11,15 @@ const Header = () =>(
     </button>
     <div className='collapse navbar-collapse' id='navbarSupportedContent'>
       <ul className='navbar-nav mr-auto'>
+
         <li className='nav-item'><Link className='nav-link' to='/CycleFeverTV'>CycleFeverTV</Link></li>
         <li className='nav-item'><Link className='nav-link' to='/CarFeverTV'>CarFeverTV</Link></li>
         <li className='nav-item'><Link className='nav-link' to='/Events'>SpecialEvents</Link></li>
         <li className='nav-item'><Link className='nav-link' to='/About'>About</Link></li>
         <li className='nav-item'><Link className='nav-link' to='/Sponsors'>Sponsors</Link></li>
+        <li className='nav-item'><img src={logo} alt='Logo' style={{width:75, height:50,marginRight:-20}}/></li>
+        <li className='nav-item'><Link className='nav-link' to='/OrlandoPredators'>Orlando Predators</Link></li>
+
       </ul>
       <span className='navbar-text'>
         <a className='icon' href='https://facebook.com/CycleFeverTV' target='_blank' rel='noopener noreferrer'><i className='fab fa-facebook-f'></i></a>
