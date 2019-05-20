@@ -1,4 +1,5 @@
 import React,{Component} from 'react';
+import {Button} from 'react-bootstrap';
 import logo from '../Images/download.png';
 import sharks from '../Images/sharks.png';
 import pirates from '../Images/pirates.png';
@@ -24,12 +25,26 @@ const Games = [
 ]
 
 class Preds extends Component{
+  state = {
+    showPopover:false,
+    showModal:false
+  }
+
+  handleClick = data =>{
+    this.setState({
+      showPopover:false,
+      showModal:true,
+      overlayDate:data.date,
+      overlayLink:data.link,
+      overlayGame:data.vTeam +' @ '+data.hTeam,
+    })
+  }
   render(){
     const PredsGames = Games.map((data, index) =>{
       return <tr key={index}>
         <td>{data.date}</td>
         <td><img style={{width:50,height:50}} src={data.hTeamLogo} alt='Home Team Logo'></img>{data.hTeam} vs <img style={{width:50, height:50}} src={data.vTeamLogo} alt='Visitor Team Logo'></img>{data.vTeam}</td>
-        <td>{data.watch}</td>
+        <td><Button onClick={() => this.handleClick(data)}>Watch</Button> </td>
       </tr>
     })
     return(
