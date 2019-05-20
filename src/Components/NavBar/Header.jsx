@@ -17,8 +17,6 @@ const Header = () =>(
         <li className='nav-item'><Link className='nav-link' to='/Events'>SpecialEvents</Link></li>
         <li className='nav-item'><Link className='nav-link' to='/About'>About</Link></li>
         <li className='nav-item'><Link className='nav-link' to='/Sponsors'>Sponsors</Link></li>
-        <li className='nav-item'><img src={logo} alt='Logo' style={{width:75, height:50,marginRight:-20}}/></li>
-        <li className='nav-item'><Link className='nav-link' to='/OrlandoPredators'>Orlando Predators</Link></li>
 
       </ul>
       <span className='navbar-text'>
