@@ -1,9 +1,25 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <rss version='2.0'>
   <channel>
-    <title>CFTV.Live</title>
+    <title>CFTV.Live ~ CycleFeverTV</title>
     <link>https://www.cftv.live</link>
     <description>
+
     </description>
+    <item>
+      <title>5-23-2019 Bike Night @ Ace Cafe Orlando</title>
+      <link></link>
+      <description></description>
+    </item>
+    <item>
+      <title>5-20-2019 Porsche Night @ Ace Cafe Orlando</title>
+      <link></link>
+      <description></description>
+    </item>
+    <item>
+        <title>5-9-2019 Bike Night @ Ace Cafe Orlando</title>
+        <link></link>
+        <description></description>
+    </item>
   </channel>
 </rss>
