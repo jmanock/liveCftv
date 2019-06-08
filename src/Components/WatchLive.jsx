@@ -7,7 +7,7 @@ const video='https://firebasestorage.googleapis.com/v0/b/cftv-fd2b9.appspot.com/
     <div className='card'>
       <h3 className='card-title text-center'>Watch Live</h3>
       <div className='embed-responsive embed-responsive-21by9'>
-        <iframe src={video} alow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowFullScreen title='Live'></iframe>
+        <iframe src={video} alow='accelerometer; encrypted-media; gyroscope; picture-in-picture' allowFullScreen title='Live'></iframe>
       </div>
     </div>
   );
