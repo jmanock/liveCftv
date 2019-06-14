@@ -2,7 +2,8 @@ import React from 'react';
 
 const WatchLive = () =>{
 
-const video='https://www.youtube.com/embed/3I5oCSPG7dc';
+const video='https://www.youtube.com/embed/hBOoZWkjjOk';
+
   return(
     <div className='card'>
       <h3 className='card-title text-center'>Watch Live</h3>
