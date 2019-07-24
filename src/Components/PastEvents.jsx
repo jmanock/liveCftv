@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import {Button, Modal, Container} from 'react-bootstrap';
 const Shows = [
+  {link:'https://www.youtube.com/embed/rE04Cvzp2po', title:'Orlando Predators Chalk Talk', location:"Cecil's BBQ", time:'37:20',date:'7-22-2019'},
   {link:'https://firebasestorage.googleapis.com/v0/b/cftv-fd2b9.appspot.com/o/OrlandoPredatorsVsColumbusLions.mp4?alt=media&token=82d0ecf8-a4f7-4621-8ffb-571a4c48b717', title:'Columbus Lions @ Orlando Predators', time:'3:23:54',location:'Amway Center',date:'7-20-2019'},
   {link:'https://www.youtube.com/embed/lt_FHsGBZ6o', title:'Porsche Night', location:'Ace Cafe Orlando', date:'7-15-2019', time:'55:56'},
   {link:'https://www.youtube.com/embed/YnNYdeM9JEo', title:'Orlando Predators @ Carolina Cobras', time:'2:52:59', date:'7-13-2019', location:'Greensboro Coliseum'},
