@@ -1,6 +1,8 @@
 import React,{Component} from 'react';
 import {Button, Modal, Container} from 'react-bootstrap';
 const Shows = [
+  {link:'https://www.youtube.com/embed/i0yFv7LFP0o', time:'51:01', date:'9-21-2019',location:'Austin Tindal Sports Complex',title:'USO Benefit Ride'},
+  {link:'https://www.youtube.com/embed/xWO5FV_tfCM',time:'57:22', title:'Porsche Night', location:'Ace Cafe Orlando', date:'9-16-2019'},
   {link:'https://www.youtube.com/embed/MC8sSeou4XI', time:'1:13:08', title:'Bike Night', location:'Ace Cafe Orlando', date:'9-12-2019'},
   {link:'https://www.youtube.com/embed/QTyqd145cng', time:'59:38', title:'Bike Night', location:'Ace Cafe Orlando', date:'8-22-2019'},
   {link:'https://www.youtube.com/embed/jth8PFapjO8', time:'1:09:03', title:'Porsche Night', location:'Ace Cafe Orlando', date:'8-19-2019'},

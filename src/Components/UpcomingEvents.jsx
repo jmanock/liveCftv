@@ -1,11 +1,11 @@
 import React,{Component} from 'react';
 
 const Events = [
-  {date:'9-16-2019', name:'Porsche Night', time:'7:30pm', location:'Ace Cafe Orlando'},
-  {date:'9-21-2019', name:'USO Benefit Ride', time:'8:00am', location:'Austin Tindal Sports Complex'},
   {date:'9-26-2019', name:'Bike Night', time:'8:00pm', location:'Ace Cafe Orlando'},
-  {date:'10-1-2019', name:'Porsche Night', time:'7:30pm', location:'Porsche South Orlando'},
-  {date:'10-10-2019', name:'Bike Night', time:'8:00pm', location:'Ace Cafe Orlando'}
+  {date:'10-10-2019', name:'Bike Night', time:'8:00pm', location:'Ace Cafe Orlando'},
+  {date:'10-21-2019', name:'Porsche Night', time:'7:30pm', location:'Ace Cafe Orlando'},
+  {date:'10-17-2019 ~ 10-20-2019', name:'Biketoberfest', time:'All Day', location:'Dayton Beach'},
+  {date:'10-24-2019', name:'Bike Night', time:'8:00pm', location:'Ace Cafe Orlando'},
 ];
 
 class UpcomingEvents extends Component{
